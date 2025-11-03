@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portal Harmonia — App de Teste</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="appbar" role="banner">
+    <div class="inner">
+      <div class="brand" aria-label="Portal Harmonia">
+        <div class="logo" aria-hidden="true"></div>
+        <span>Portal Harmonia</span>
+        <span class="chip" id="roleChip" aria-live="polite" style="display:none">perfil</span>
+      </div>
+      <div>
+        <button class="btn ghost" id="btnGoLogin" style="display:none">Login</button>
+        <button class="btn neutral" id="btnLogout" style="display:none">Sair</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" class="container" role="main"></main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
